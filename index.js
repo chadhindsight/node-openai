@@ -13,8 +13,8 @@ async function getPoem() {
     const response = await openai.createChatCompletion({
         model: "gpt-4",
         messages: [{ role: "user", content: "generate a short poem about Diablo 4" }]
-    })
+    });
     // get the poem from response
-    const poem = response.data.choices[0].message.content
-    console.log(poem)
+    const poem = response.data.choices[0].message.content;
+    console.log(poem);
 }
