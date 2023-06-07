@@ -15,7 +15,7 @@ async function getPoem() {
         model: "gpt-3.5-turbo",
         messages: [{ role: "user", content: "generate a short poem" }],
     });
-    // get the poem from response
+    // get the poem from response.
     const poem = response.data.choices[0].message.content;
     console.log(poem);
 }
