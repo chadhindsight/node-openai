@@ -10,6 +10,7 @@ const openai = new OpenAIApi(configuration);
 
 // Make request
 async function getPoem() {
+    // NB: It is not working because you're out of free credits
     const response = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [{ role: "user", content: "generate a short poem" }],
