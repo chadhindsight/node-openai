@@ -18,5 +18,5 @@ async function getPoem() {
     const poem = response.data.choices[0].message.content;
     console.log(poem);
 }
-// Still cooking
+
 getPoem();
